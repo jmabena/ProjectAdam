@@ -1,0 +1,185 @@
+
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;  
+    font-family: 'Overpass', sans-serif;
+} 
+
+li,a,button{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500; 
+    font-size: 16px; 
+    color: #000000; 
+    text-decoration: none;
+} 
+
+header{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px 10%; 
+    background-color: rgb(210, 255, 143);
+} 
+
+.logo{
+    cursor: pointer; 
+    max-height: 40px;
+
+} 
+
+.nav_links{
+    list-style: none;
+} 
+
+.nav_links li {
+    display: inline-block; 
+    padding: 0px 20px;
+} 
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+} 
+
+.nav_links li a:hover {
+    color: #0088a9
+} 
+
+button{
+    padding: 9px 25px; 
+    background-color: rgb(152,251,152); 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+} 
+
+button:hover{
+    background-color: rgb(143,188,143); 
+}  
+
+h1{
+    font-family: 'Overpass', sans-serif; 
+    font-size: 72px;
+}
+
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center; 
+    border: 8px solid black; 
+    border-radius: 25px;  
+    border-image: linear-gradient(to bottom, turquoise, greenyellow) 0 1;  
+} 
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left; 
+    cursor: pointer;
+}
+
+.character > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.character > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+} 
+
+
+#uid{
+    visibility: hidden;
+} 
+
+#title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#episodes, #members, #popularity, #ranked, #score{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    font-size: 25px;
+}
+.review{
+    list-style-type: none;
+    padding: 10px 20px;
+    text-align: left; 
+    cursor: pointer; 
+    border: 4px solid black; 
+    border-radius: 25px;  
+    border-image: linear-gradient(to left, turquoise, greenyellow) 1 0;
+} 
+
+#profile, #score{
+    font-weight: bold; 
+    font-size: 30px;
+}
+#img_url{
+    border-radius: 30px;
+}
+#link{
+    visibility: hidden;
+}
+#start{
+    visibility: hidden;
+}
+#end{
+    visibility: hidden;
+} 
+
+.review{
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: left; 
+    cursor: pointer;
+    display: inline-block;
+}

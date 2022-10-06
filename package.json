@@ -1,0 +1,26 @@
+{
+  "name": "projectadam",
+  "version": "1.0.0",
+  "description": "test1",
+  "main": "t1.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "jabu",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "csv-batch": "^2.0.5",
+    "csvtojson": "^2.0.10",
+    "dirty-json": "^0.9.2",
+    "express": "^4.17.3",
+    "jsonrepair": "^2.2.1"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
